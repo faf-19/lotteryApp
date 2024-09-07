@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
-import 'package:settings/presentation/widgets/background.dart'; // Assuming CustomBackground is in this package
+import 'package:settings/presentation/widgets/background.dart';
 
 class Changepassword extends StatefulWidget {
   const Changepassword({Key? key}) : super(key: key);
@@ -74,7 +74,7 @@ class _ChangepasswordState extends State<Changepassword> {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.stretch,
                           children: [
-                            // Back Button Row
+                            
                             Row(
                               children: [
                                 IconButton(
@@ -87,7 +87,7 @@ class _ChangepasswordState extends State<Changepassword> {
                               ],
                             ),
                             const SizedBox(height: 20),
-                            // Old Password Field
+                            
                             TextFormField(
                               controller: _oldPasswordController,
                               obscureText: _obscureOldPassword,
@@ -110,7 +110,7 @@ class _ChangepasswordState extends State<Changepassword> {
                               validator: _validatePassword,
                             ),
                             const SizedBox(height: 20),
-                            // New Password Field
+                          
                             TextFormField(
                               controller: _newPasswordController,
                               obscureText: _obscureNewPassword,
@@ -133,7 +133,7 @@ class _ChangepasswordState extends State<Changepassword> {
                               validator: _validatePassword,
                             ),
                             const SizedBox(height: 20),
-                            // Confirm Password Field
+                            
                             TextFormField(
                               controller: _confirmPasswordController,
                               obscureText: _obscureConfirmPassword,
@@ -156,7 +156,7 @@ class _ChangepasswordState extends State<Changepassword> {
                               validator: _validateConfirmPassword,
                             ),
                             const Spacer(),
-                            // Change Password Button
+                        
                             ElevatedButton(
                               onPressed: _changePassword,
                               style: ElevatedButton.styleFrom(

@@ -44,7 +44,7 @@ class LanguageSelectionDialog extends StatelessWidget {
                     items: languages.map<DropdownMenuItem<String>>((String language) {
                       return DropdownMenuItem<String>(
                         value: language,
-                        child: Text(language)// Updated to use the actual language
+                        child: Text(language)
                       );
                     }).toList(),
                   ),

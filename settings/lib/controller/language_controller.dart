@@ -24,11 +24,11 @@ Locale _locale(String languageCode) {
       return const Locale(ENGLISH);
     case AMHARIC:
       return const Locale(AMHARIC);
-    default: // Default case to handle any unexpected values
-      return const Locale(ENGLISH); // Fallback to English
+    default: 
+      return const Locale(ENGLISH); 
   }
 }
 
 AppLocalizations translation(BuildContext context) {
-  return AppLocalizations.of(context)!; // Ensure non-null return with !
+  return AppLocalizations.of(context)!; 
 }

@@ -83,22 +83,22 @@ class _SettingsState extends State<Settings> {
           selectedLanguage: selectedLanguage,
           onLanguageSelected: (language) async {
             setState(() {
-              selectedLanguage = language; // Update the selected language
+              selectedLanguage = language; 
             });
 
-            // Change locale based on selected language
+            
             Locale newLocale;
             switch (language) {
               case 'Amharic':
                 newLocale = const Locale('am');
                 break;
-              default: // English
+              default: 
                 newLocale = const Locale('en');
             }
 
-            // Persist the selected language name
+            
             await setLocaleInPreferences(language);
-            MyApp.setLocale(context, newLocale); // Update the locale
+            MyApp.setLocale(context, newLocale); 
           },
         );
       },
@@ -175,7 +175,7 @@ class _SettingsState extends State<Settings> {
                     ),
                     const SizedBox(height: 30),
                     Settingsitem(
-                      title: translation(context).language, // Display the selected language name
+                      title: translation(context).language, 
                       icon: Ionicons.language_outline,
                       bgcolor: softWhite,
                       iconColor: Colors.black,

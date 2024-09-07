@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class CustomBackground extends StatelessWidget {
-  // const Background({super.key});
   const CustomBackground({super.key, required this.child});
   final Widget child;
   final String assetName = 'assets/background_shape.svg';

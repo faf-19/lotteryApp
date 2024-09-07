@@ -55,9 +55,9 @@ class _PrivacyState extends State<Privacy> {
                   child: Container(
                     padding: const EdgeInsets.only(left: 20, top: 20, right: 30, bottom: 30),
                     decoration: BoxDecoration(
-                      // color: Colors.white.withOpacity(0.5), // Semi-transparent background
-                      borderRadius: BorderRadius.circular(12), // Rounded corners
-                      border: Border.all(color: softWhite.withOpacity(0.5)), // Border color
+                      
+                      borderRadius: BorderRadius.circular(12), 
+                      border: Border.all(color: softWhite.withOpacity(0.5)), 
                     ),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,

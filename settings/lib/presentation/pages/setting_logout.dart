@@ -17,14 +17,14 @@ void showLogoutDialog(BuildContext context, Function onLogout) {
         actions: [
           TextButton(
             onPressed: () {
-              Navigator.of(context).pop(); // Close the dialog
+              Navigator.of(context).pop(); 
             },
             child: Text(translation(context).cancel),
           ),
           TextButton(
             onPressed: () {
-              onLogout(); // Call the logout function
-              Navigator.of(context).pop(); // Close the dialog
+              onLogout(); 
+              Navigator.of(context).pop(); 
             },
             child: Text(translation(context).logout),
           ),
